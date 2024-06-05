@@ -1057,8 +1057,8 @@ CommandBar.FocusLost:Connect(function(a)
 	CommandBar.Text = ""
 end)
 CommandBar.Changed:Connect(function()
-	if CommandBar.Text:find("z") and Settings.Prefix ~= "z" then
-		CommandBar.Text = CommandBar.Text:gsub("z","")
+	if CommandBar.Text:find(";") and Settings.Prefix ~= ";" then
+		CommandBar.Text = CommandBar.Text:gsub(";","")
 	end
 end)
 
@@ -1089,4 +1089,4 @@ task.spawn(function()
 		end
 	end
 end)
-API.Notify("Press 'z' to open Admin Menu. Welcome to Tiger Admin 2.0",4)
+API.Notify("Press ';' to open Admin Menu. Welcome to Tiger Admin 2.0",4)
